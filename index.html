@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JEU DU PENDU</title>
+</head>
+<body>
+    
+<h1>  JEU DU PENDU µ </h1>
+<p>TROUVE LES MOTS CACHES £</p>
+
+<div class="jeu-contenue">
+<svg height="250" widht="200" class="figure-contenue">
+
+
+<!-- Support -->
+<line x1="60" y1="20" x2="140" y2="20"/>
+<line x1="140" y1="20" x2="140" y2="50"/>
+<line x1="60" y1="20" x2="60" y2="230"/>
+<line x1="20" y1="230" x2="100" y2="230"/>
+
+
+<!-- Tête -->
+<circle cx="140" cy="70" r="20" class="figure-partie" />
+
+
+<!-- Corps -->
+
+<line x1="140" y1="90" x2="140" y2="150" class="figure-partie" />
+
+<!-- Bras -->
+
+<line x1="140" y1="120" x2="120" y2="100" class="figure-partie" />
+<line x1="140" y1="120" x2="160" y2="100" class="figure-partie" />
+
+<!-- Jambe -->
+<line x1="140" y1="150" x2="120" y2="180" class="figure-partie" />
+<line x1="140" y1="150" x2="160" y2="180" class="figure-partie" />
+
+</svg>
+
+<div class="mauvaises-lettres-contenue">
+    <p>MAUVAISES LETTRES @</p>
+<div id="mauvaises-lettres"></div>
+</div>
+
+<div class="mot" id="mot"></div>
+
+</div>
+
+
+<!-- Contenue Message Final  -->
+
+<div class="popup-contenue" id="popup-contenue">
+    <div class="popup">
+       <h2 id="message-final"></h2>
+       <button id="rejouer-bouton">Rejouer</button>
+    </div>
+</div>
+
+
+<!-- Notification -->
+
+<div class="notification-contenue" id="notification-contenue">
+    <p>VOUS AVEZ DEJA ESSAYE CETTE LETTRE € !</p>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
